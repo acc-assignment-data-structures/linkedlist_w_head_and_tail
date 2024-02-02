@@ -35,33 +35,6 @@ public:
         }
     }
 
-    void insertAtPosition(int data, int position) {
-        Node* newNode = new Node(data);
-        if (position <= 0) {
-            // What we are going to do?
-        }
-
-        if (!head && position > 1) {
-            // What we are going to do?
-        }
-
-        if (position == 1) {
-            // Insert at the beginning
-        } else {
-            Node* temp = head;
-            int i = 1;
-            while (i < position - 1 && temp) {
-                //traverse the node
-            }
-
-            if (!temp) {
-                // What to do if there is no temp
-            }
-
-            // Insert the node here
-        }
-    }
-
     void display() {
         Node* current = head;
         while (current) {
@@ -84,10 +57,6 @@ int main() {
 
     std::cout << "Doubly Linked List after insertion: ";
     myList.display();
-
-    myList.insertAtPosition(3, 3);
-    std::cout << "Doubly Linked List after insertion at position 3: ";
-    myList.display();
-
+    
     return 0;
 }
